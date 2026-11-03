@@ -31,7 +31,7 @@
 ### Toolbox
 
 <p>
-  <img src="https://skillicons.dev/icons?i=python,r,pytorch,sklearn,latex,git,linux,obsidian&theme=light" alt="Python, R, PyTorch, scikit-learn, LaTeX, Git, Linux, Obsidian"/>
+  <img src="https://skillicons.dev/icons?i=python,pytorch,sklearn,latex,git,linux,obsidian&theme=light" alt="Python, PyTorch, scikit-learn, LaTeX, Git, Linux, Obsidian"/>
 </p>
 
 ### Contribution forest
