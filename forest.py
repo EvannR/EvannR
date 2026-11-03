@@ -38,14 +38,12 @@ THEMES = {
         "soil": "#ebedf0", "soil_used": "#e3d9c6", "trunk": "#8a6a46",
         "leaf": ["#9be9a8", "#40c463", "#30a14e", "#216e39"],
         "pine": ["#7fd492", "#2f9e55", "#23803f", "#185a2c"],
-        "front": "#d9a441", "text": "#57606a",
-    },
+        "front": "#d9a441",     },
     "dark": {
         "soil": "#161b22", "soil_used": "#2b2419", "trunk": "#a07a4f",
         "leaf": ["#2ea043", "#26a641", "#2ea043", "#39d353"],
         "pine": ["#238636", "#1f8a37", "#238636", "#2fb547"],
-        "front": "#e3b341", "text": "#8b949e",
-    },
+        "front": "#e3b341",     },
 }
 
 PITCH = 16          # distance between cells
@@ -113,7 +111,7 @@ def render(weeks, theme):
     c = THEMES[theme]
     ncol = len(weeks)
     width = LEFT * 2 + ncol * PITCH
-    height = TOP + 7 * PITCH + 22
+    height = TOP + 7 * PITCH + 8
     sweep = ncol * STEP                       # time for a wave to cross the grid
     grow_end, cut_at = 9, 62                  # % of the cycle
     front_start = cut_at / 100 * PERIOD
@@ -157,10 +155,9 @@ def render(weeks, theme):
 
     front = (f'<g class="front"><rect x="{LEFT - 6}" y="{TOP - 4}" width="5" height="{7 * PITCH + 6}" '
              f'rx="2.5" fill="{c["front"]}"/></g>')
-    caption = (f'<text x="{width - LEFT}" y="{height - 6}" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" ')
 
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">'
-            f'<style>{css}</style>{"".join(soil)}{front}{"".join(trees)}{caption}</svg>')
+            f'<style>{css}</style>{"".join(soil)}{front}{"".join(trees)}</svg>')
 
 
 def main():
