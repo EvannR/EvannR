@@ -157,8 +157,7 @@ def render(weeks, theme):
 
     front = (f'<g class="front"><rect x="{LEFT - 6}" y="{TOP - 4}" width="5" height="{7 * PITCH + 6}" '
              f'rx="2.5" fill="{c["front"]}"/></g>')
-    caption = (f'<text x="{width - LEFT}" y="{height - 6}" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" '
-               f'font-size="10" fill="{c["text"]}">growth → harvest → regeneration</text>')
+    caption = (f'<text x="{width - LEFT}" y="{height - 6}" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" ')
 
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">'
             f'<style>{css}</style>{"".join(soil)}{front}{"".join(trees)}{caption}</svg>')
