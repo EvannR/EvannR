@@ -6,7 +6,7 @@ on:
   workflow_dispatch:        # manual run from the Actions tab
   push:
     branches: [main]
-    paths: ["scripts/forest.py", ".github/workflows/forest.yml"]
+    paths: ["forest.py", ".github/workflows/forest.yml"]
 
 permissions:
   contents: write
@@ -24,7 +24,7 @@ jobs:
       - name: Generate the forest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/forest.py --user ${{ github.repository_owner }} --out dist
+        run: python forest.py --user ${{ github.repository_owner }} --out dist
 
       - name: Publish to the output branch
         run: |
