@@ -38,8 +38,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EvannR/EvannR/output/forest-dark.svg">
-    <img src="https://raw.githubusercontent.com/EvannR/EvannR/output/forest-light.svg" alt="Contribution calendar drawn as a forest that grows, is harvested and regenerates">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EvannR/EvannR/output/forest-dark.svg"?v=2>
+    <img src="https://raw.githubusercontent.com/EvannR/EvannR/output/forest-light.svg?v=2" alt="Contribution calendar drawn as a forest that grows, is harvested and regenerates">
   </picture>
 </p>
 
